@@ -6,3 +6,35 @@ body {
   @apply font-sans text-gray-800 bg-gradient-to-br from-indigo-50 to-purple-50;
   min-height: 100vh;
 }
+
+h1 {
+  @apply text-3xl font-bold my-5;
+}
+
+h2 {
+  @apply text-2xl font-bold my-5;
+}
+
+h3 {
+  @apply text-xl font-bold my-4;
+}
+
+h4 {
+  @apply text-lg font-bold my-4;
+}
+
+p {
+  @apply my-4;
+}
+
+ul, ol {
+  @apply my-4 pl-8;
+}
+
+ul, ul li {
+  @apply list-disc;
+}
+
+ol, ol li {
+  @apply list-decimal;
+}
