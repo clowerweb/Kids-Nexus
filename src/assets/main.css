@@ -28,13 +28,17 @@ p {
 }
 
 ul, ol {
-  @apply my-4 pl-8;
+  @apply my-4;
+
+  &:not(.list-none) {
+    @apply pl-8;
+  }
 }
 
-ul, ul li {
+ul {
   @apply list-disc;
 }
 
-ol, ol li {
+ol {
   @apply list-decimal;
 }

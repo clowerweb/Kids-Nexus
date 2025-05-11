@@ -58,48 +58,60 @@ import { RouterLink } from 'vue-router';
 
         <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div class="bg-white rounded-lg shadow-sm p-8">
-            <div class="text-4xl mb-4">🌱</div>
-            <h3 class="text-xl font-bold text-gray-900">Equity in Education</h3>
+            <h3 class="text-xl font-bold text-gray-900 flex items-center">
+              <span class="text-4xl mr-4">🌱</span>
+              Equity in Education
+            </h3>
             <p class="mt-2 text-gray-600">
               We believe that every child, regardless of background or circumstance, deserves access to high-quality learning resources tailored to their needs.
             </p>
           </div>
 
           <div class="bg-white rounded-lg shadow-sm p-8">
-            <div class="text-4xl mb-4">🔍</div>
-            <h3 class="text-xl font-bold text-gray-900">Child-Centered Learning</h3>
+            <h3 class="text-xl font-bold text-gray-900 flex items-center">
+              <span class="text-4xl mr-4">🔍</span>
+              Child-Centered Learning
+            </h3>
             <p class="mt-2 text-gray-600">
               We put children at the center of everything we build, adapting to their unique learning styles, interests, and developmental needs.
             </p>
           </div>
 
           <div class="bg-white rounded-lg shadow-sm p-8">
-            <div class="text-4xl mb-4">🔒</div>
-            <h3 class="text-xl font-bold text-gray-900">Privacy & Safety</h3>
+            <h3 class="text-xl font-bold text-gray-900 flex items-center">
+              <span class="text-4xl mr-4">🔒</span>
+              Privacy & Safety
+            </h3>
             <p class="mt-2 text-gray-600">
               We maintain the highest standards of data privacy and content safety, ensuring a secure environment for children to learn and grow.
             </p>
           </div>
 
           <div class="bg-white rounded-lg shadow-sm p-8">
-            <div class="text-4xl mb-4">🔄</div>
-            <h3 class="text-xl font-bold text-gray-900">Continuous Improvement</h3>
+            <h3 class="text-xl font-bold text-gray-900 flex items-center">
+              <span class="text-4xl mr-4">🔄</span>
+              Continuous Improvement
+            </h3>
             <p class="mt-2 text-gray-600">
               We constantly refine our platform based on educational research, user feedback, and advances in AI to provide the best possible learning experience.
             </p>
           </div>
 
           <div class="bg-white rounded-lg shadow-sm p-8">
-            <div class="text-4xl mb-4">🌐</div>
-            <h3 class="text-xl font-bold text-gray-900">Open Source & Transparent</h3>
+            <h3 class="text-xl font-bold text-gray-900 flex items-center">
+              <span class="text-4xl mr-4">🌐</span>
+              Open Source & Transparent
+            </h3>
             <p class="mt-2 text-gray-600">
               We believe in the power of community and transparency. Our open-source approach enables collaboration and ensures accountability.
             </p>
           </div>
 
           <div class="bg-white rounded-lg shadow-sm p-8">
-            <div class="text-4xl mb-4">🤝</div>
-            <h3 class="text-xl font-bold text-gray-900">Parent Partnership</h3>
+            <h3 class="text-xl font-bold text-gray-900 flex items-center">
+              <span class="text-4xl mr-4">🤝</span>
+              Parent Partnership
+            </h3>
             <p class="mt-2 text-gray-600">
               We empower parents with insights and tools to support their child's learning journey, fostering a collaborative educational environment.
             </p>

@@ -11,7 +11,7 @@
         </div>
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul class="space-y-2 text-sm text-gray-300">
+          <ul class="space-y-2 text-sm text-gray-300 list-none">
             <li><RouterLink to="/" class="hover:text-white">Home</RouterLink></li>
             <li><RouterLink to="/about" class="hover:text-white">About</RouterLink></li>
             <li><RouterLink to="/features" class="hover:text-white">Features</RouterLink></li>
