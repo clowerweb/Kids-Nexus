@@ -140,19 +140,19 @@ const toggleFaq = (faqId) => {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="text-center text-sm font-medium text-gray-500 uppercase tracking-wide">Trusted by educators and families worldwide</p>
         <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-5">
-          <div class="flex justify-center text-gray-400">
+          <div class="flex items-center justify-center text-gray-400">
             <span class="text-4xl">🏫</span> <span class="ml-2 text-sm font-medium">School District</span>
           </div>
-          <div class="flex justify-center text-gray-400">
+          <div class="flex items-center justify-center text-gray-400">
             <span class="text-4xl">🎓</span> <span class="ml-2 text-sm font-medium">University Research</span>
           </div>
-          <div class="flex justify-center text-gray-400">
+          <div class="flex items-center justify-center text-gray-400">
             <span class="text-4xl">🏆</span> <span class="ml-2 text-sm font-medium">EdTech Award</span>
           </div>
-          <div class="flex justify-center text-gray-400">
+          <div class="flex items-center justify-center text-gray-400">
             <span class="text-4xl">👨‍👩‍👧‍👦</span> <span class="ml-2 text-sm font-medium">Family Choice</span>
           </div>
-          <div class="flex justify-center text-gray-400">
+          <div class="flex items-center justify-center text-gray-400">
             <span class="text-4xl">🌍</span> <span class="ml-2 text-sm font-medium">Global Reach</span>
           </div>
         </div>
@@ -173,8 +173,10 @@ const toggleFaq = (faqId) => {
 
         <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div v-for="feature in features" :key="feature.id" class="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-            <div class="text-4xl mb-4">{{ feature.icon }}</div>
-            <h3 class="text-xl font-bold text-gray-900">{{ feature.title }}</h3>
+            <h3 class="flex items-center text-xl font-bold text-gray-900">
+              <span class="text-4xl mr-4">{{ feature.icon }}</span>
+              {{ feature.title }}
+            </h3>
             <p class="mt-2 text-gray-600">{{ feature.description }}</p>
           </div>
         </div>
