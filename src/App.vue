@@ -5,7 +5,7 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 to-purple-50">
+  <div class="min-h-screen flex flex-col">
     <Header />
 
     <main class="flex-grow">
@@ -21,10 +21,6 @@ import Footer from '@/components/Footer.vue'
 </template>
 
 <style lang="postcss">
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Page transition animations */
 .page-enter-active,
 .page-leave-active {
@@ -34,10 +30,5 @@ import Footer from '@/components/Footer.vue'
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-}
-
-body {
-  @apply font-sans text-gray-800;
-  min-height: 100vh;
 }
 </style>

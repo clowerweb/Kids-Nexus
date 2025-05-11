@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-sans text-gray-800 bg-gradient-to-br from-indigo-50 to-purple-50;
+  min-height: 100vh;
+}
