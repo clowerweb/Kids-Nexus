@@ -14,7 +14,7 @@ dist-ssr
 public
 vendor
 coverage
-nginx/*
+nginx/ssl/*
 *.local
 
 /cypress/videos/
