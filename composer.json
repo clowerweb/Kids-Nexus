@@ -4,6 +4,7 @@
     "ext-pdo": "*",
     "ext-openssl": "*",
     "ext-curl": "*",
+    "php": ">=8.3",
     "vlucas/phpdotenv": "^5.6"
   },
   "autoload": {
@@ -16,7 +17,7 @@
       "php-http/discovery": true
     },
     "platform": {
-      "php": ">=8.3"
+      "php": "8.3"
     }
   }
 }
