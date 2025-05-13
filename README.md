@@ -5,7 +5,8 @@
 1. `composer install`
 2. `docker-compose up -d`
 3. Go to `http://localhost:8081` (PHPMyAdmin) and import `App/Database/schema.sql`
-4. Add `kidsnexus.local` to your hosts file, pointing to `127.0.0.1`
+4. Copy `.env.example` to `.env` and update the values for your environment
+5. Add `kidsnexus.local` to your hosts file, pointing to `127.0.0.1`
 
 You can now access the site at `http://kidsnexus.local` and the API at `http://kidsnexus.local/api`!
 
