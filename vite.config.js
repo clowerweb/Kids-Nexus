@@ -16,7 +16,17 @@ export default defineConfig({
     },
   },
   build: {
+    manifest: true,
     outDir: './public',
     emptyOutDir: true,
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: true,
+    watch: {
+      usePolling: true,
+    },
+    allowedHosts: ['localhost', 'kidsnexus.local']
   }
 })
