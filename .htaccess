@@ -1,12 +1,45 @@
-# Handle SPA routing with Vue Router
+# Enable rewrite engine
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  
-  # If the request is not for an existing file or directory
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  
-  # Rewrite all other requests to the index.html file
-  RewriteRule ^(.*)$ index.html [QSA,L]
+    RewriteEngine On
+    RewriteBase /
+    
+    # API Routing
+    # If the path starts with /api
+    RewriteCond %{REQUEST_URI} ^/api
+    # And the requested file does not exist
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # And the requested directory does not exist
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # Then forward to the API index.php
+    RewriteRule ^api/(.*)$ api/index.php [QSA,L]
+    
+    # Frontend SPA Routing
+    # If the request is not for the API
+    RewriteCond %{REQUEST_URI} !^/api
+    # And the requested file does not exist
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # And the requested directory does not exist
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # Then forward to the frontend index.html
+    RewriteRule ^(.*)$ index.html [QSA,L]
+</IfModule>
+
+# Set some HTTP headers for better security
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Enable CORS for API
+    <FilesMatch "\.(php)$">
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+        Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+    </FilesMatch>
+</IfModule>
+
+# Handle PHP files
+<IfModule mod_php8.c>
+    php_flag display_errors On
+    php_value error_reporting E_ALL
 </IfModule>

@@ -1,0 +1,22 @@
+{
+  "require": {
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-openssl": "*",
+    "ext-curl": "*",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "App/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    },
+    "platform": {
+      "php": ">=8.3"
+    }
+  }
+}
