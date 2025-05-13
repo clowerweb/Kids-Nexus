@@ -14,7 +14,12 @@ dist-ssr
 public
 vendor
 coverage
-nginx/ssl/*
+nginx/ssl/*.crt
+nginx/ssl/*.csr
+nginx/ssl/*.key
+nginx/ssl/*.pem
+nginx/ssl/*.ppk
+
 *.local
 
 /cypress/videos/
